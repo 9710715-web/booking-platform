@@ -1,15 +1,23 @@
-# Booking Platform — стабильный комплект
+# Booking Platform — полная демо-версия
 
-Файлы:
-- index.html — простая стабильно работающая форма (React + Tailwind)
-- widget.js — мини‑виджет бронирования
-- vercel.json — настройки Vercel для статической выдачи (без сборки)
-- README_ru.md — инструкция
+Дата сборки: 2025-11-16
 
-## Как применить
-1) В GitHub открой репозиторий `booking-platform` → **Add file → Upload files**.
-2) Перетащи *все три файла* (`index.html`, `widget.js`, `vercel.json`) и `README_ru.md` в корень → **Commit changes**.
-3) На Vercel открой проект → **Deployments → Redeploy**.
-4) Открой свой домен на Vercel — должен показаться рабочий интерфейс.
+Внутри:
+- **index.html** — полноценный интерфейс (Клиент / Админ / Дашборд), RU/TR/EN, TRY/EUR/USD
+- **widget.js** — встраиваемый виджет (скрипт для чужих сайтов)
+- **vercel.json** — конфигурация Vercel (статическая выдача, без сборки)
 
-Если хочешь полную версию со слотами/языками/валютами — скажи, соберу отдельно.
+## Публикация на Vercel (без сборки)
+1. В репозитории `booking-platform` нажми **Add file → Upload files** и перетащи `index.html`, `widget.js`, `vercel.json`, `README_ru.md` в **корень**.
+2. **Commit changes**.
+3. В Vercel открой проект → **Deployments → Redeploy**.
+4. Открой свой домен, убедись, что интерфейс загружается.
+
+## Встраивание виджета на сайт клуба
+Замените `YOUR_DOMAIN` на ваш домен Vercel:
+```html
+<script src="https://YOUR_DOMAIN.vercel.app/widget.js"
+        data-club="istanbul-tennis-center"
+        data-lang="auto"
+        data-currency="auto"></script>
+```
