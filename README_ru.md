@@ -1,17 +1,6 @@
-# Booking Platform — Variant A (полная версия)
+# Booking Platform — Variant A v2
+- Виджет-коды для каждого клуба на вкладке Owner.
+- Кнопки WhatsApp/Telegram без имени. При открытии модалки автоматически переносятся влево и опускаются по z-index, чтобы не накладываться на окно оплаты.
+- Админ: добавить/удалить корт, +50/−50 к цене.
 
-Включено:
-- Полный интерфейс: Клиент / Админ / Дашборд
-- Языки RU/TR/EN и валюты TRY/EUR/USD (авто по стране клуба)
-- Админ: добавление/удаление кортов, +50 / -50 к цене (base/prime одновременно)
-- Плавающие кнопки WhatsApp/Telegram — Roman (+905315175503)
-- Виджет widget.js
-- vercel.json (статическая выдача)
-
-## Установка
-1) В репозиторий загрузите файлы: index.html, widget.js, vercel.json, README_ru.md
-2) На Vercel — Redeploy
-3) Откройте домен; вкладка "Админ" — управление кортами и ценами.
-
-## Вставка виджета
-<script src="https://YOUR_DOMAIN.vercel.app/widget.js" data-club="istanbul-tennis-center" data-lang="auto" data-currency="auto"></script>
+Контакты: WhatsApp +905315175503, Telegram https://t.me/Roman
